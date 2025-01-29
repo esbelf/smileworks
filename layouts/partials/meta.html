@@ -1,10 +1,14 @@
 <meta charset="utf-8">
-{{ if isset .Params "title" }}
- <title>{{ .Params.title }}</title>
-{{ else }}
- <title>{{ .Site.title }}</title>
-{{ end }}
+<title>{{ .Params.title }}</title>
 
 {{ with resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{ with resources.Get "sass/_ui.css" }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+
+{{ with resources.Get "sass/styles.css" }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
