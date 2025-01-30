@@ -1,0 +1,153 @@
+<main role="main" id="main" tabindex="-1">
+  <section class="internal">
+    <div id="interior-banner">
+      <div class="contain">
+        <div id="page-title"></div>
+      </div>
+    </div>
+    <div id="page">
+      <h1>
+        Request a Dental Appointment Mt Pleasant</h1>
+      <h2 id="append">
+        It&rsquo;s Easier Than Ever to Smile</h2>
+      <div id="main-img">
+        <img src="/images/request-an-appointment-1.webp" alt="">
+      </div>
+      <p>
+        You don&rsquo;t even need to pick up the phone. Just fill out the short form below, click &ldquo;Send,&rdquo; and that&rsquo;s it! Our team will respond within a day or so to get you scheduled, plus we&rsquo;ll answer any initial questions you might have included.</p>
+      <form id="appt-form" class="recaptcha-form" style="display: block;" method="post" action="assets/php/validator.php">
+        <h2>Request an Appointment</h2>
+        <div class="flex-row-input">
+          <article>
+            <div class="group">
+              <span class="input-content">
+                <input type="text" name="Name" required="true" class="input__field">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Name</span></label>
+              </span>
+            </div>
+            <div class="group">
+              <span class="input-content">
+                <input type="tel" name="Phone" required="true" class="input__field">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Phone</span></label>
+              </span>
+            </div>
+            <div class="group">
+              <span class="input-content">
+                <input type="email" name="Email" required="true" class="input__field">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Email</span></label>
+              </span>
+            </div>
+            <div class="group">
+              <span class="input-content">
+                <input type="text" name="insurance" class="input__field">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Your dental insurance</span></label>
+              </span>
+            </div>
+            <div class="group">
+              <span class="input-content dwn">
+                <select name="Patient" required class="input__field">
+                  <option value="" hidden></option>
+                  <option value="New Patient">New Patient</option>
+                  <option value="Existing Patient">Existing Patient</option>
+                </select>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Are you a...</span></label>
+              </span>
+            </div>
+            <div class="options day">
+              <label>Preferred day(s) of the week</label>
+              <div class="flex-checks">
+                <span><input name="day[]" type="checkbox" value="Monday" /> Monday </span>
+                <span><input name="day[]" type="checkbox" value="Tuesday" /> Tuesday </span>
+                <span><input name="day[]" type="checkbox" value="Wednesday" /> Wednesday </span>
+                <span><input name="day[]" type="checkbox" value="Thursday" /> Thursday </span>
+                <span><input name="day[]" type="checkbox" value="Friday" /> Friday </span>
+                <!--           <span><input name="day[]" type="checkbox" value="Saturday" /> Saturday </span> -->
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="group">
+              <span class="input-content dwn">
+                <select name="Communication" class="input__field">
+                  <option value="" hidden></option>
+                  <option value="Phone">Phone</option>
+                  <option value="Text">Text</option>
+                  <option value="email">Email</option>
+                </select>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Preferred Method of Communication</span></label>
+              </span>
+            </div>
+            <div class="group">
+              <span class="input-content dwn">
+                <select name="Hear" required class="input__field">
+                  <option value="" hidden></option>
+                  <option value="Search Engine">Search Engine</option>
+                  <option value="Family/Friend">Family/Friend</option>
+                  <option value="Promotion">Promotion</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label class="input__label"><span class="input__label-content">How'd you hear about us?</span></label>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+              </span>
+            </div>
+            <div class="group" id="int-list">
+              <span class="input-content dwn">
+                <select id="interests" name="interested" class="input__field">
+                  <option value="" hidden></option>
+                  <option value="Dental Checkup & Cleaning">Dental Checkup & Cleaning</option>
+                  <option value="Traditional Braces">Traditional Braces</option>
+                  <option value="Invisalign Clear Aligners">Invisalign Clear Aligners</option>
+                  <option value="Veneers">Veneers</option>
+                  <option value="Teeth Whitening">Teeth Whitening</option>
+                  <option value="Gummy Smile">Gummy Smile</option>
+                  <option value="Dental Implants">Dental Implants</option>
+                  <option value="Dentures">Dentures</option>
+                  <option value="Crowns">Crowns</option>
+                  <option value="Bridges">Bridges</option>
+                  <option value="Fillings">Fillings</option>
+                  <option value="Extractions">Extractions</option>
+                  <option value="Emergency Dental Care">Emergency Dental Care</option>
+                  <option value="Other">Other</option>
+                </select>
+                <label class="input__label"><span class="input__label-content">I am interested in…</span></label>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+              </span>
+              <input id="other-int" type="text" name="other-interest" placeholder="Type your interest here...">
+            </div>
+            <div class="group">
+              <span class="input-content txt">
+                <textarea class="input__field" name="Comment"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="input__label"><span class="input__label-content">Do you have any questions or comments?</label>
+              </span>
+          </article>
+        </div>
+        <div class="text-center">
+          <input type="submit" name="submit" value="Submit" class="btn">
+          <input type="hidden" name="token_generate" id="token_generate">
+        </div>
+        <input type="hidden" name="_subject" value="Request Appointment" />
+        <input type="hidden" name="_redirect" value="thanks.html" />
+      </form>
+    </div>
+  </section>
+  <div class="index">
+  </div>
+  <!-- end of inside home page container -->
+</main>

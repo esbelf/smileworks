@@ -1,0 +1,129 @@
+<div id="assoc">
+  <div class="flex-row">
+    <span><img src='{{ "/images/assoc-1.png" | urls.AbsURL }}' alt=""></span>
+    <span><img src='{{ "/images/assoc-2.png" | urls.AbsURL }}' alt=""></span>
+    <span><img src='{{ "/images/assoc-3.png" | urls.AbsURL }}' alt=""></span>
+    <span><img src='{{ "/images/assoc-4.png" | urls.AbsURL }}' alt=""></span>
+    <span><img src='{{ "/images/assoc-5.png" | urls.AbsURL }}' alt=""></span>
+    <span><img src='{{ "/images/assoc-6.png" | urls.AbsURL }}' alt=""></span>
+  </div>
+</div>
+<footer>
+  <div class="ra-bar text-center">
+    <span class="h2 text-white block">Ready to Get Started?</span>
+    <a href="request-an-appointment.html" class="btn">Request an Appointment</a>
+    <a href="#ask" class="btn-outline modal">Ask Us a Question</a>
+  </div>
+  <hr>
+  <div id="fo-contents">
+    <div class="fo-logo">
+      <a href="/" class="logo"><img src='{{ "/images/logo-footer.png" | urls.AbsURL }}' alt=""></a>
+      <div class="social">
+        <a href="https://maps.app.goo.gl/YdZmcdTsaJsWvM8j8" class="gp" aria-label="google" target="_blank"><i class="icon-google"></i></a>
+        <a href="https://www.facebook.com/SmileWorksUS" class="fb" aria-label="facebook" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://www.yelp.com/biz/smileworks-general-and-cosmetic-dentistry-mount-pleasant" class="yp" aria-label="yelp" target="_blank"><i class="icon-yelp"></i></a>
+        <!-- <a href="" class="tw" aria-label="twitter" target="_blank"><i class="icon-twitter"></i></a> -->
+        <!--<a href="" class="yt" aria-label="youtube" target="_blank"><i class="icon-youtube-play"></i></a>-->
+        <a href="https://www.instagram.com/smileworksmtp/" class="in" aria-label="instagram" target="_blank"><i class="icon-instagramm"></i></a>
+      </div>
+    </div>
+    <div class="fo-info order-first">
+      <span class="fo-title">Contact Us</span>
+      <a href="tel:+18436547300" class="pho">(843) 654-7300</a>
+      <a href="https://maps.app.goo.gl/VgQJnWhprdeHN1tN6" class="phy" target="_blank">882 Whipple Rd<br>
+        Mt Pleasant, SC 29464</a>
+    </div>
+    <div class="fo-hours">
+      <div class="hours">
+        <span class="fo-title">Office Hours</span>
+        <p>
+          <label>Monday</label>9:00 am - 7:00 pm
+          <br />
+          <label>Tuesday</label>9:00 am - 7:00 pm
+          <br />
+          <label>Wednesday</label>9:00 am - 7:00 pm
+          <br />
+          <label>Thursday</label>9:00 am - 7:00 pm
+          <br />
+          <label>Friday</label>9:00 am - 3:00 pm
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="copy">
+    <div class="block lg:flex justify-between items-center">
+      <div>
+        &copy;<div class="inline" id="copyDate"></div> Smileworks <span class="hidden lg:inline">|</span><br class="inline lg:hidden"> <a href="sitemap.html">Sitemap</a> <span>|</span>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div>Site designed and maintained by <a href="https://www.tntdental.com" target="_blank"><img src='{{ "/images/tnt.png" | urls.AbsURL }}' alt=""></a></div>
+    </div>
+  </div>
+</footer>
+<dialog id="ask" class="modal-content">
+  <h3 class="h3">Ask Us a Question</h3>
+  <form action="assets/php/validator.php" class="forms" method="post">
+    <input name="Name" placeholder="Name" required="true" type="text" />
+    <input name="Phone" placeholder="Phone Number" type="text" />
+    <input name="email" placeholder="Email Address" required="true" type="email" />
+    <select name="Patient" required>
+      <option value="" hidden>Are You A...</option>
+      <option value="New">New Patient</option>
+      <option value="Existing">Existing Patient</option>
+    </select>
+    <select name="Hear" required>
+      <option value="" hidden>Where Did You Hear About Us?</option>
+      <option value="Search Engine">Search Engine</option>
+      <option value="Family/Friend">Family/Friend</option>
+      <option value="Promotion">Promotion</option>
+      <option value="Social Media">Social Media</option>
+      <option value="Other">Other</option>
+    </select>
+    <textarea name="question" placeholder="Questions/Comments"></textarea>
+    <div class="text-center">
+      <input type="submit" name="submit" value="Submit" class="btn">
+      <input type="hidden" name="token_generate" id="token_generate">
+    </div>
+    <input name="_subject" value="Ask Us a Question" type="hidden" />
+    <input name="_redirect" value="thanks.html" type="hidden" />
+  </form>
+</dialog>
+<ul id="fixed-tabs">
+  <li class="ra"><a href="request-an-appointment.html">
+      <span><i class="icon-calendar-1"></i> </span>
+      <span>Request<strong> an Appointment</strong></span>
+    </a></li>
+  <li class="call"><a href="tel:+18436547300">
+      <span><i class="icon-phone"></i></span>
+      <span>Call <strong>Us</strong></span>
+    </a></li>
+  <li class="map"> <a href="https://maps.app.goo.gl/VgQJnWhprdeHN1tN6" target="_blank">
+      <span><i class="icon-location"></i></span>
+      <span><strong>View </strong>Map</span>
+    </a></li>
+  <li class="fr"><a href="for-patients.html#forms">
+      <span><i class="icon-doc-text"></i></span>
+      <span>Download <strong>Forms </strong></span>
+    </a></li>
+  <li class="fb"><a href="https://www.facebook.com/SmileWorksUS/" target="_blank">
+      <span><i class="icon-facebook"></i></span>
+      <span><strong>Follow </strong>Us</span>
+    </a></li>
+  <li class="gg"><a href="https://www.google.com/maps/place/Smileworks+General+%26+Cosmetic+Dentistry/@32.8307731,-79.8459707,17z/data=!4m8!3m7!1s0x88fe71eed94fc197:0x42ec48bc649b037e!8m2!3d32.8307731!4d-79.8459707!9m1!1b1!16s%2Fg%2F1td0trhc?entry=ttu&g_ep=EgoyMDI1MDEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+      <span><i class="icon-google"></i></span>
+      <span>Read<strong> Reviews </strong></span>
+    </a></li>
+</ul>
+<script>
+date = document.getElementById("copyDate");
+date.innerHTML = new Date().getFullYear();
+</script>
+{{ with resources.Get "js/foundation.js" }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ with resources.Get "js/scripts.js" }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ with resources.Get "js/recaptcha.js" }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}

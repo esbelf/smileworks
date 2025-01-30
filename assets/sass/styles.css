@@ -453,7 +453,7 @@ header .logo img+img {
   animation-duration: 1s;
   animation-fill-mode: both;
   z-index: 100;
-  background-image: url(assets/images/why-bg.png);
+  background-image: url(/images/why-bg.png);
   background-size: cover;
 }
 
@@ -515,7 +515,7 @@ header .logo img+img {
 
   .nav-down {
     box-shadow: 0 3px 7px rgba(24, 23, 24, 0.2);
-    background-image: url(assets/images/why-bg.png);
+    background-image: url(/images/why-bg.png);
     background-size: cover;
   }
 
@@ -868,7 +868,7 @@ header .logo img+img {
 }
 
 #banner {
-  background-image: url(assets/images/banner-bg.png);
+  background-image: url(/images/banner-bg.png);
   background-size: cover;
 }
 
@@ -940,7 +940,7 @@ header .logo img+img {
   left: 0;
   right: 0;
   opacity: 0.2;
-  background-image: url(assets/images/banner-bubbles-1.png);
+  background-image: url(/images/banner-bubbles-1.png);
   background-size: cover;
 }
 
@@ -1171,7 +1171,7 @@ header .logo img+img {
 #amenities {
   padding: 20px;
   padding-bottom: 40px;
-  background-image: url(assets/images/why-bg.png);
+  background-image: url(/images/why-bg.png);
   background-size: cover;
 }
 
@@ -1219,7 +1219,7 @@ header .logo img+img {
 }
 
 #team {
-  background-image: url(assets/images/index-team.png);
+  background-image: url(/images/index-team.png);
   background-size: cover;
   background-position: center;
   padding: 200px 20px 80px;
@@ -1290,7 +1290,7 @@ header .logo img+img {
 }
 
 #reviews .slick-reviews .slick-current:before {
-  content: url(assets/images/index-review-badge.png);
+  content: url(/images/index-review-badge.png);
   position: absolute;
   top: -100px;
   right: -80px;
@@ -1402,7 +1402,7 @@ header .logo img+img {
   left: 0;
   background-size: cover;
   background-position: center;
-  background-image: url(assets/images/bubble-video.png);
+  background-image: url(/images/bubble-video.png);
   opacity: 0.3;
 }
 
@@ -1473,7 +1473,7 @@ header .logo img+img {
 }
 
 #specials {
-  background-image: url(assets/images/why-bg.png);
+  background-image: url(/images/why-bg.png);
   background-size: cover;
   text-align: center;
   padding: 20px;
@@ -1566,7 +1566,7 @@ header .logo img+img {
 #internal-specials .cpn .content {
   position: absolute;
   padding: 10px;
-  background-image: url(assets/images/cpn-bg.png);
+  background-image: url(/images/cpn-bg.png);
   background-size: cover;
   bottom: 20px;
   left: 0;
@@ -1775,7 +1775,7 @@ body.page_special-offers #interior-banner .contain {
   height: 48px;
   border-radius: 50%;
   line-height: 48px;
-  background-image: url(assets/images/bubble-social.png);
+  background-image: url(/images/bubble-social.png);
   background-size: cover;
 }
 
@@ -1787,7 +1787,7 @@ body.page_special-offers #interior-banner .contain {
 footer {
   margin: 10px 20px 20px;
   border-radius: 18px;
-  background-image: url(assets/images/footer-bg.png);
+  background-image: url(/images/footer-bg.png);
   background-size: cover;
   color: #fff;
 }
@@ -2072,7 +2072,7 @@ footer hr {
   padding: 30px 10px 10px;
   position: relative;
   counter-reset: why-section;
-  background-image: url(assets/images/why-bg.png);
+  background-image: url(/images/why-bg.png);
   background-size: cover;
 }
 
@@ -2115,7 +2115,7 @@ footer hr {
 }
 
 .why ul li:before {
-  content: url(assets/images/why.png);
+  content: url(/images/why.png);
   display: block;
   margin: 0 auto 20px;
   position: static;
@@ -2200,7 +2200,7 @@ footer hr {
 }
 
 .divider-block .elem-left:before {
-  content: url(assets/images/bubbles-left.png);
+  content: url(/images/bubbles-left.png);
   position: absolute;
   top: -60px;
   left: -100px;
@@ -2213,7 +2213,7 @@ footer hr {
 }
 
 .divider-block .elem-right:before {
-  content: url(assets/images/bubbles-right.png);
+  content: url(/images/bubbles-right.png);
   position: absolute;
   top: -40px;
   right: -180px;
@@ -2275,7 +2275,7 @@ footer hr {
 }
 
 .more-to-explore>span:after {
-  content: url(assets/images/bubble-more.png);
+  content: url(/images/bubble-more.png);
   position: absolute;
   bottom: 50%;
   right: 50%;
@@ -2555,7 +2555,7 @@ main ul li:before {
   position: relative;
   text-align: center;
   color: #fff;
-  background-image: url(assets/images/banner-bg.png);
+  background-image: url(/images/banner-bg.png);
   background-size: cover;
   background-position: center;
 }
@@ -2612,7 +2612,7 @@ main ul li:before {
 }
 
 #main-img:before {
-  content: url(assets/images/banner-bubbles-2.png);
+  content: url(/images/banner-bubbles-2.png);
   position: absolute;
   right: 50%;
   transform: translateX(50%);
@@ -2629,7 +2629,7 @@ main ul li:before {
   left: 0;
   right: 0;
   opacity: 0.2;
-  background-image: url(assets/images/banner-bubbles-1.png);
+  background-image: url(/images/banner-bubbles-1.png);
   background-size: cover;
 }
 
@@ -2649,7 +2649,7 @@ main ul li:before {
 }
 
 .meet-bot figure:after {
-  content: url(assets/images/bubbles-left.png);
+  content: url(/images/bubbles-left.png);
   position: absolute;
   top: 0px;
   left: -170px;
@@ -2762,11 +2762,11 @@ hr {
 }
 
 .accordion .toggle.active:after {
-  content: url(assets/images/faq-minus.png);
+  content: url(/images/faq-minus.png);
 }
 
 .accordion .toggle:after {
-  content: url(assets/images/faq-plus.png);
+  content: url(/images/faq-plus.png);
   position: absolute;
   right: 10px;
   top: 5px;

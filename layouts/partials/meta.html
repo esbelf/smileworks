@@ -1,14 +1,20 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=1" />
+<meta name="description" content="" />
+<link rel="canonical" href="http://www.tntclients.com/cms/published/smileworks.ushttps://www.smileworks.us/" />
+<link href="https://tntwebsites.com/tnticons/css/fontello.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta name="apple-mobile-web-app-title" content="" />
+<link rel="icon" href='{{ "/images/favicon.png" | urls.AbsURL }}'>
 <title>{{ .Params.title }}</title>
-
 {{ with resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
-
 {{ with resources.Get "sass/_ui.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
-
 {{ with resources.Get "sass/styles.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
